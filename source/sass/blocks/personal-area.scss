@@ -1,0 +1,25 @@
+.personal-area {
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    position: relative;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: $color-night-rider;
+      right: 0;
+      top: 0;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.quantity {
+  font-size: 10px;
+  line-height: 100%;
+  color: $color-default-white;
+  background-color: $color-sorbus;
+  border-radius: 50%;
+  padding: 3px;
+
+  @include font-inter-bold;
+}

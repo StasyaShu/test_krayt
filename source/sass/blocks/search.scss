@@ -1,0 +1,19 @@
+.search {
+  display: flex;
+  align-items: center;
+  padding: 25px 0 25px 26px;
+  border-left: 1px solid $color-white-smoke;
+
+  svg {
+    margin: 0 15px 0 0;
+  }
+
+  input {
+    border: none;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

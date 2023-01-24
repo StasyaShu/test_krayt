@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+
+  p {
+    display: block;
+    padding: 0;
+  }
+
+  &__name {
+    margin: 0 0 6px;
+    font-size: 32px;
+    line-height: 100%;
+
+    @include font-prata-regular;
+
+    span {
+      color: $color-porsche;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    letter-spacing: 0.27em;
+    color: $color-suva-grey3;
+
+    @include font-robotocondensed-light;
+  }
+}

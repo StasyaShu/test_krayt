@@ -1,0 +1,39 @@
+.header-list {
+  padding: 0 0 0 50px;
+  background-color: $color-white-smoke2;
+  display: flex;
+  align-items: center;
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin: 10px 60px 10px 0;
+  }
+
+  &__item:last-child {
+    margin: 10px 0;
+  }
+
+  &__link {
+    font-size: 13px;
+    line-height: 100%;
+    text-transform: uppercase;
+
+    @include font-inter-medium;
+  }
+
+  &__link--active {
+    opacity: 0.5;
+  }
+
+  &__search-field {
+    margin: 0 0 0 auto;
+  }
+}

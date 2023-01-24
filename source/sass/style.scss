@@ -21,6 +21,18 @@
 @import "components/overlay";
 @import "components/header";
 @import "components/footer";
+@import "components/custom-select";
+@import "components/quantity";
 
 // Стилевые блоки
 
+@import "blocks/city-select";
+@import "blocks/phone";
+@import "blocks/logo";
+@import "blocks/personal-area";
+@import "blocks/accessories";
+@import "blocks/header-list";
+@import "blocks/search";
+
+@import "styles/baloon-style";
+@import "styles/action-style";
