@@ -23,8 +23,10 @@
 @import "components/footer";
 @import "components/custom-select";
 @import "components/quantity";
+@import "components/button";
+@import "components/slide";
 
-// Стилевые блоки
+// Основные локи
 
 @import "blocks/city-select";
 @import "blocks/phone";
@@ -33,6 +35,9 @@
 @import "blocks/accessories";
 @import "blocks/header-list";
 @import "blocks/search";
+@import "blocks/promo";
+
+// Стилевые блоки
 
 @import "styles/baloon-style";
 @import "styles/action-style";

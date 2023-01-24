@@ -1,0 +1,47 @@
+.promo {
+  width: 100%;
+
+  &__container {
+    position: relative;
+    background-color: $color-white-smoke2;
+    padding: 24px;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: -1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: url("../img/svg/deco-diamond.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+      width: 833px;
+      height: 643px;
+      top: 0;
+      left: -123px;
+      z-index: -1;
+    }
+  }
+
+  &__slide {
+    padding: 0 103px;
+  }
+
+  &__controls {
+    position: absolute;
+    top: 50%;
+    margin: -23px 0 0 0;
+
+    &--prev {
+      left: 24px;
+    }
+
+    &--next {
+      right: 24px;
+    }
+  }
+}

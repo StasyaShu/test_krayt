@@ -6,6 +6,63 @@
   @@include('html/header.html',{})
   <main>
     <h1 class="visually-hidden">Ювелирный магазин Goldy Store</h1>
+    <section class="promo">
+      <div class="container">
+        <h2 class="visually-hidden">Промоблок со слайдером из специальных предложений</h2>
+        <div class="promo__container swiper">
+          <div class="promo__wrapper swiper-wrapper">
+            <div class="promo__slide slide swiper-slide">
+              <div class="slide__content">
+                <p class="slide__text">Суперскидка до 60% <span>на бриллианты</span></p>
+                <button class="slide__button button" type="button">Подробнее</button>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/img-promo@1x.webp 1x, img/img-promo@2x.webp 2x">
+                <img src="img/img-promo@1x.png" srcset="img/img-promo@2x.png 2x" width="548" height="548"
+                  alt="Золотое кольцо с бриллиантами">
+              </picture>
+            </div>
+            <div class="promo__slide slide swiper-slide">
+              <div class="slide__content">
+                <p class="slide__text">Суперскидка до 60% <span>на бриллианты</span></p>
+                <button class="slide__button button" type="button">Подробнее</button>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/img-promo@1x.webp 1x, img/img-promo@2x.webp 2x">
+                <img src="img/img-promo@1x.png" srcset="img/img-promo@2x.png 2x" width="548" height="548"
+                  alt="Золотое кольцо с бриллиантами">
+              </picture>
+            </div>
+            <div class="promo__slide slide swiper-slide">
+              <div class="slide__content">
+                <p class="slide__text">Суперскидка до 60% <span>на бриллианты</span></p>
+                <button class="slide__button button" type="button">Подробнее</button>
+              </div>
+              <picture>
+                <source type="image/webp" srcset="img/img-promo@1x.webp 1x, img/img-promo@2x.webp 2x">
+                <img src="img/img-promo@1x.png" srcset="img/img-promo@2x.png 2x" width="548" height="548"
+                  alt="Золотое кольцо с бриллиантами">
+              </picture>
+            </div>
+          </div>
+          <button
+            class="promo__controls promo__controls--prev button button--slider button--slider-prev swiper-button-prev"
+            type="button"><span class="visually-hidden">Прокрутить назад</span>
+            <svg width="17" height="8" viewBox="0 0 17 8">
+              <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button
+            class="promo__controls promo__controls--next button button--slider button--slider-next swiper-button-next"
+            type="button"><span class="visually-hidden">Прокрутить вперед</span>
+            <svg width="17" height="8" viewBox="0 0 17 8">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+          <div class="promo__pagination swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
   </main>
   @@include('html/footer.html',{})
   <script src="js/main.min.js"></script>

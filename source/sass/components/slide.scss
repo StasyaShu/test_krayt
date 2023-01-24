@@ -1,0 +1,31 @@
+.slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__text {
+    color: $color-night-rider;
+    font-size: 20px;
+    line-height: 100%;
+    margin: 0 0 54px;
+    padding: 0;
+
+    @include font-prata-regular;
+
+    span {
+      text-transform: uppercase;
+      font-size: 50px;
+      display: block;
+      margin: 40px 0 0 0;
+    }
+  }
+
+  &__button {
+    width: 40%;
+  }
+}

@@ -1,0 +1,54 @@
+.button {
+  cursor: pointer;
+  border: none;
+  background-color: $color-night-rider;
+  color: $color-default-white;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  padding: 24px 0;
+  transition: opacity $trans-default, background-color $trans-default,
+    color $trans-default;
+
+    @include font-inter-medium;
+
+  &--slider {
+    background-color: transparent;
+    padding: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1px solid $color-night-rider;
+    color: $color-night-rider;
+
+    svg {
+      transform: translateX(0);
+      transition: transform $trans-default;
+    }
+
+    &:hover {
+      background-color: $color-white-smoke3;
+    }
+  }
+
+  &--slider-prev {
+    &:active {
+      svg {
+        transform: translateX(-10px);
+      }
+    }
+  }
+
+  &--slider-next {
+    &:active {
+      svg {
+        transform: translateX(10px);
+      }
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.2;
+  }
+}

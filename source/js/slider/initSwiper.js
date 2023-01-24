@@ -1,28 +1,24 @@
 import '../vendor/swiper.js';
 
-// const initSwiper = () => {
-//   const slider = document.querySelector('.works');
+const initSwiper = () => {
+  const slider = document.querySelector('.swiper');
 
-//   if (!slider) {
-//     return;
-//   }
-//   const buttonNext = document.querySelector('.works__controls--next');
-//   const buttonPrev = document.querySelector('.works__controls--prev');
-//   // eslint-disable-next-line
-//   const swiper = new Swiper(slider, {
-//     navigation: {
-//       nextEl: buttonNext,
-//       prevEl: buttonPrev,
-//     },
-//     speed: 2000,
-//     loop: true,
-//     autoplay: {
-//       delay: 500,
-//       stopOnLastSlide: false,
-//       disableOnInteraction: false,
-//     },
-//     slidesPerView: 'auto',
-//   });
-// };
+  if (!slider) {
+    return;
+  }
+  const buttonNext = document.querySelector('.promo__controls--next');
+  const buttonPrev = document.querySelector('.promo__controls--prev');
+  // eslint-disable-next-line
+  const swiper = new Swiper(slider, {
+    navigation: {
+      nextEl: buttonNext,
+      prevEl: buttonPrev,
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.promo__pagination'
+    },
+  });
+};
 
-// export {initSwiper};
+export {initSwiper};

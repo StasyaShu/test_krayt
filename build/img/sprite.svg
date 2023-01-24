@@ -15,6 +15,8 @@
 </mask>
 <rect y="4" width="16" height="13" rx="1" stroke="currentColor" stroke-width="3.2" mask="url(#path-2-inside-1_703_46)"/>
 <path d="M4 8L4 5C4 2.79086 5.79086 1 8 1V1C10.2091 1 12 2.79086 12 5L12 8" stroke="currentColor" stroke-width="1.6"/>
+</g></symbol><symbol id="icon-check" viewBox="0 0 12 8"><g fill="none">
+<path d="M4.29998 7.89998L0.56665 4.16665L1.28332 3.44998L4.29998 6.46665L10.7 0.0666504L11.4167 0.783317L4.29998 7.89998Z" fill="black"/>
 </g></symbol><symbol id="icon-compare" viewBox="0 0 13 15"><g fill="none">
 <line x1="1.1" y1="8" x2="1.1" y2="15" stroke="currentColor" stroke-width="2.2"/>
 <line x1="6.1" y1="-4.80825e-08" x2="6.1" y2="15" stroke="currentColor" stroke-width="2.2"/>
