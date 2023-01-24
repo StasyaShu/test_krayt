@@ -1,0 +1,44 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* stylelint-disable-next-line */
+  min-height: calc(100 * var(--vh, 1vh));
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fz-default;
+  line-height: $lh-default;
+  font-family: $ff-inter;
+  color: $color-night-rider;
+  background-color: $color-default-white;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  color: $color-night-rider;
+  text-decoration: none;
+  outline: none;
+  outline-offset: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

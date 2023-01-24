@@ -1,0 +1,45 @@
+// Breakpoints
+
+@mixin tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+// Fonts
+
+@mixin font-inter-light {
+  font-weight: 300;
+}
+
+@mixin font-inter-regular {
+  font-weight: 400;
+}
+
+@mixin font-inter-medium {
+  font-weight: 500;
+}
+
+@mixin font-inter-semibold {
+  font-weight: 600;
+}
+
+@mixin font-inter-bold {
+  font-weight: 700;
+}
+
+@mixin font-robotocondensed-light {
+  font-weight: 300;
+  font-family: robotocondensed;
+}
+
+@mixin font-prata-regular {
+  font-weight: 400;
+  font-family: prata;
+}

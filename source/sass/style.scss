@@ -1,0 +1,26 @@
+@import "fonts";
+
+// служебные
+
+@import "vendor/normalize";
+
+// Свайпер
+
+@import "vendor/swiper-vars.scss";
+@import "vendor/swiper.scss";
+
+// Общие
+@import "general/variables";
+@import "general/mixins";
+@import "general/global";
+@import "general/utils";
+
+// Компоненты
+
+@import "components/container";
+@import "components/overlay";
+@import "components/header";
+@import "components/footer";
+
+// Стилевые блоки
+
