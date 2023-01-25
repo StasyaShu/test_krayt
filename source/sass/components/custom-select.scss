@@ -58,9 +58,9 @@
 
   &__list {
     position: absolute;
+    z-index: 2;
     bottom: 0;
     left: -24px;
-    z-index: 1;
     width: 197px;
     margin: 0;
     padding: 14px 0;

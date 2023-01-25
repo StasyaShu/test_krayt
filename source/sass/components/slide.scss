@@ -2,6 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  img {
+    width: 548px;
+    height: 548px;
+    object-fit: contain;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -22,6 +28,7 @@
       font-size: 50px;
       display: block;
       margin: 40px 0 0 0;
+      white-space: nowrap;
     }
   }
 

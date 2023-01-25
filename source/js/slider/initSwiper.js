@@ -16,7 +16,8 @@ const initSwiper = () => {
     },
     slidesPerView: 'auto',
     pagination: {
-      el: '.promo__pagination'
+      el: '.promo__pagination',
+      clickable: true
     },
   });
 };

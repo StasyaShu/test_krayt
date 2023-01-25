@@ -45,3 +45,31 @@
     }
   }
 }
+
+.promo__container .swiper-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.promo__container .swiper-pagination span:first-child {
+  margin: 0 8px 0 0;
+}
+
+.promo__container .swiper-pagination span:last-child {
+  margin: 0 0 0 8px;
+}
+
+.promo__container .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid $color-night-rider;
+}
+
+.promo__container .swiper-pagination-bullet-active {
+  background-color: $color-night-rider;
+}
