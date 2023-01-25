@@ -1,0 +1,23 @@
+.tools {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__item {
+    color: $color-very-light-grey;
+    transition: color $trans-default;
+
+    &:hover {
+      color: $color-nobel2;
+      transition: $trans-default;
+    }
+
+    &:active,
+    &:focus {
+      color: $color-cinnabar;
+      transition: color $trans-default;
+    }
+  }
+}

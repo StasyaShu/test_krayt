@@ -1,0 +1,22 @@
+.bullets {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin: 0 8px 0 0;
+  }
+
+  &__item {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid $color-night-rider;
+  }
+
+  &__item--active {
+    background-color: $color-night-rider;
+  }
+}

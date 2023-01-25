@@ -105,7 +105,7 @@
           </ul>
         </div>
       </div>
-      <div class="header__links header-list">
+      <nav class="header__links header-list">
         <ul class="header-list__list">
           <li class="header-list__item">
             <a class="header-list__link header-list__link--active action-style" href="#" aria-label="Перейти в каталог">Каталог</a>
@@ -135,7 +135,7 @@
           </svg>
           <input type="text" placeholder="Поиск по сайту">
         </div>
-      </div>
+      </nav>
     </div>
   </div>
 </header>
@@ -195,6 +195,466 @@
             </svg>
           </button>
           <div class="promo__pagination swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="popular">
+      <div class="container">
+        <div class="popular__wrapper">
+          <h2 class="popular__title title">Популярные категории</h2>
+          <ul class="popular__list">
+            <li class="popular__item popular-card action-style">
+              <a href="#" class="popular-card__link" aria-label="Перейти в раздел кольца" onclick="return false">
+                <picture>
+                  <source type="image/webp" srcset="img/img-popular-rings@1x.webp 1x, img/img-popular-rings@2x.webp 2x">
+                  <img src="img/img-popular-rings@1x.png" srcset="img/img-popular-rings@2x.png 2x" width="127"
+                    height="100" alt="Золотые кольца">
+                </picture>
+                <p>Кольца</p>
+              </a>
+            </li>
+            <li class="popular__item popular-card action-style">
+              <a href="#" class="popular-card__link" aria-label="Перейти в раздел серьги" onclick="return false">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/img-popular-earrings@1x.webp 1x, img/img-popular-earrings@2x.webp 2x">
+                  <img src="img/img-popular-earrings@1x.png" srcset="img/img-popular-earrings@2x.png 2x" width="102"
+                    height="130" alt="Золотые серьги">
+                </picture>
+                <p>Серьги</p>
+              </a>
+            </li>
+            <li class="popular__item popular-card action-style">
+              <a href="#" class="popular-card__link" aria-label="Перейти в раздел помолвочные кольца"
+                onclick="return false">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/img-popular-wedding-rings@1x.webp 1x, img/img-popular-wedding-rings@2x.webp 2x">
+                  <img src="img/img-popular-wedding-rings@1x.png" srcset="img/img-popular-wedding-rings@2x.png 2x"
+                    width="117" height="93" alt="Золотые помолвочные кольца">
+                </picture>
+                <p>Помолвочные кольца</p>
+              </a>
+            </li>
+            <li class="popular__item popular-card action-style">
+              <a href="#" class="popular-card__link" aria-label="Перейти в раздел браслеты" onclick="return false">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/img-popular-bracelets@1x.webp 1x, img/img-popular-bracelets@2x.webp 2x">
+                  <img src="img/img-popular-bracelets@1x.png" srcset="img/img-popular-bracelets@2x.png 2x" width="141"
+                    height="118" alt="Золотой браслет">
+                </picture>
+                <p>Браслеты</p>
+              </a>
+            </li>
+            <li class="popular__item popular-card action-style">
+              <a href="#" class="popular-card__link" aria-label="Перейти в раздел Колье и подвески"
+                onclick="return false">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/img-popular-necklaces@1x.webp 1x, img/img-popular-necklaces@2x.webp 2x">
+                  <img src="img/img-popular-necklaces@1x.png" srcset="img/img-popular-necklaces@2x.png 2x" width="128"
+                    height="128" alt="Серебрянное колье с бриллиантами">
+                </picture>
+                <p>Колье и подвески</p>
+              </a>
+            </li>
+            <li class="popular__item popular-card action-style">
+              <a href="#" class="popular-card__link" aria-label="Перейти в раздел часы" onclick="return false">
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/img-popular-watches@1x.webp 1x, img/img-popular-watches@2x.webp 2x">
+                  <img src="img/img-popular-watches@1x.png" srcset="img/img-popular-watches@2x.png 2x" width="122"
+                    height="147" alt="Золотые наручные часы">
+                </picture>
+                <p>Часы</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="sale">
+      <div class="container">
+        <div class="sale__wrapper">
+          <h2 class="sale__title title">Распродажа</h2>
+          <div class="sale__controls">
+            <ul class="sale__filter filter">
+              <li class="filter__item">
+                <a class="filter__link filter__link--active" href="#" aria-label="Фильтровать по кольцам"
+                  onclick="return false">Кольца</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#" aria-label="Фильтровать по серьгам" onclick="return false">Серьги</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#" aria-label="Фильтровать по браслетам"
+                  onclick="return false">Браслеты</a>
+              </li>
+              <li class="filter__item">
+                <a class="filter__link" href="#" aria-label="Фильтровать по часам" onclick="return false">Часы</a>
+              </li>
+            </ul>
+            <div class="sale__slider-buttons">
+              <button class="button button--slider button--slider-prev button--disabled" type="button"><span
+                  class="visually-hidden">Прокрутить назад</span>
+                <svg width="17" height="8" viewBox="0 0 17 8">
+                  <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="button button--slider button--slider-next" type="button"><span
+                  class="visually-hidden">Прокрутить вперед</span>
+                <svg width="17" height="8" viewBox="0 0 17 8">
+                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <ul class="sale__list">
+            <li class="sale__list-item sale-card">
+              <a href="#" class="sale-card__link" aria-label="Карточка товара кольца из белого золота с бриллиантами"
+                onclick="return false">
+                <span class="sale-card__marker-sale marker marker--sale">Sale</span>
+                <div class="sale-card__tools">
+                  <ul class="tools">
+                    <li class="tools__item">
+                      <svg width="20" height="18" viewBox="0 0 20 18">
+                        <use xlink:href="img/sprite.svg#icon-heart-sale"></use>
+                      </svg>
+                    </li>
+                    <li class="tools__item">
+                      <svg width="20" height="20" viewBox="0 0 20 20">
+                        <use xlink:href="img/sprite.svg#icon-eye-sale"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="img/img-sale-ring-1@1x.webp 1x, img/img-sale-ring-1@2x.webp 2x">
+                  <img src="img/img-sale-ring-1@1x.jpg" srcset="img/img-sale-ring-1@2x.jpg 2x" width="200" height="200"
+                    alt="Кольцо из белого золота с бриллиантом">
+                </picture>
+                <div class="sale-card__bullets">
+                  <ul class="bullets">
+                    <li class="bullets__item bullets__item--active">
+                      <span class="visually-hidden">Буллет для переключения следующей картинки</span>
+                    </li>
+                    <li class="bullets__item">
+                      <span class="visually-hidden">Буллет для переключения следующей картинки</span>
+                    </li>
+                    <li class="bullets__item">
+                      <span class="visually-hidden">Буллет для переключения следующей картинки</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sale-card__content">
+                  <div class="sale-card__price">
+                    <p class="sale-card__price-now">41&nbsp;000&nbsp;&#8381;</p>
+                    <span class="sale-card__price-old">65&nbsp;000&nbsp;&#8381;</span>
+                    <span class="sale-card__marker-discount marker marker--discount">-45%</span>
+                  </div>
+                  <div class="sale-card__text">
+                    <p>Стильное кольцо из белого золота c бриллиантами</p>
+                  </div>
+                </div>
+              </a>
+              <div class="sale-card__parametrs">
+                <div class="custom-select custom-select--sale-card" data-select>
+                  <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                      class="custom-select__text filter"></span><span class="custom-select__icon">
+                      <svg width="18" height="18" viewBox="0 0 11 7">
+                        <use xlink:href="img/sprite.svg#icon-filter"></use>
+                      </svg>
+                    </span></button>
+                  <ul class="custom-select__list baloon-style" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true"
+                      role="option">
+                      Белое золото</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
+                      role="option">
+                      Желтое золото</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
+                      role="option">
+                      Серебро</li>
+                  </ul>
+                </div>
+                <div class="custom-select custom-select--sale-card" data-select>
+                  <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                      class="custom-select__text filter"></span><span class="custom-select__icon">
+                      <svg width="18" height="18" viewBox="0 0 11 7">
+                        <use xlink:href="img/sprite.svg#icon-filter"></use>
+                      </svg>
+                    </span></button>
+                  <ul class="custom-select__list baloon-style" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true"
+                      role="option">
+                      Размер: 16</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
+                      role="option">
+                      Размер: 18</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
+                      role="option">
+                      Размер: 19</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="sale__list-item sale-card">
+              <a href="#" class="sale-card__link" aria-label="Карточка товара кольца из белого золота с бриллиантами"
+                onclick="return false">
+                <div class="sale-card__tools">
+                  <ul class="tools">
+                    <li class="tools__item">
+                      <svg width="20" height="18" viewBox="0 0 20 18">
+                        <use xlink:href="img/sprite.svg#icon-heart-sale"></use>
+                      </svg>
+                    </li>
+                    <li class="tools__item">
+                      <svg width="20" height="20" viewBox="0 0 20 20">
+                        <use xlink:href="img/sprite.svg#icon-eye-sale"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="img/img-sale-ring-2@1x.webp 1x, img/img-sale-ring-2@2x.webp 2x">
+                  <img src="img/img-sale-ring-2@1x.jpg" srcset="img/img-sale-ring-2@2x.jpg 2x" width="200" height="200"
+                    alt="Кольцо из белого золота с бриллиантом">
+                </picture>
+                <div class="sale-card__bullets">
+                  <ul class="bullets">
+                    <li class="bullets__item bullets__item--active">
+                      <span></span>
+                    </li>
+                    <li class="bullets__item">
+                      <span></span>
+                    </li>
+                    <li class="bullets__item">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sale-card__content">
+                  <div class="sale-card__price">
+                    <p class="sale-card__price-now">56&nbsp;000&nbsp;&#8381;</p>
+                  </div>
+                  <div class="sale-card__text">
+                    <p>Стильное кольцо из белого золота с бриллиантами</p>
+                  </div>
+                </div>
+              </a>
+              <div class="sale-card__parametrs">
+                <div class="custom-select custom-select--sale-card" data-select>
+                  <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                      class="custom-select__text filter"></span><span class="custom-select__icon">
+                      <svg width="18" height="18" viewBox="0 0 11 7">
+                        <use xlink:href="img/sprite.svg#icon-filter"></use>
+                      </svg>
+                    </span></button>
+                  <ul class="custom-select__list baloon-style" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true"
+                      role="option">
+                      Белое золото</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
+                      role="option">
+                      Желтое золото</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
+                      role="option">
+                      Серебро</li>
+                  </ul>
+                </div>
+                <div class="custom-select custom-select--sale-card" data-select>
+                  <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                      class="custom-select__text filter"></span><span class="custom-select__icon">
+                      <svg width="18" height="18" viewBox="0 0 11 7">
+                        <use xlink:href="img/sprite.svg#icon-filter"></use>
+                      </svg>
+                    </span></button>
+                  <ul class="custom-select__list baloon-style" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true"
+                      role="option">
+                      Размер: 16</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
+                      role="option">
+                      Размер: 18</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
+                      role="option">
+                      Размер: 19</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="sale__list-item sale-card">
+              <a href="#" class="sale-card__link" aria-label="Карточка товара кольца из белого золота с бриллиантами"
+                onclick="return false">
+                <div class="sale-card__tools">
+                  <ul class="tools">
+                    <li class="tools__item">
+                      <svg width="20" height="18" viewBox="0 0 20 18">
+                        <use xlink:href="img/sprite.svg#icon-heart-sale"></use>
+                      </svg>
+                    </li>
+                    <li class="tools__item">
+                      <svg width="20" height="20" viewBox="0 0 20 20">
+                        <use xlink:href="img/sprite.svg#icon-eye-sale"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="img/img-sale-ring-3@1x.webp 1x, img/img-sale-ring-3@2x.webp 2x">
+                  <img src="img/img-sale-ring-3@1x.jpg" srcset="img/img-sale-ring-3@2x.jpg 2x" width="200" height="200"
+                    alt="Кольцо из белого золота с бриллиантом">
+                </picture>
+                <div class="sale-card__bullets">
+                  <ul class="bullets">
+                    <li class="bullets__item bullets__item--active">
+                      <span></span>
+                    </li>
+                    <li class="bullets__item">
+                      <span></span>
+                    </li>
+                    <li class="bullets__item">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sale-card__content">
+                  <div class="sale-card__price">
+                    <p class="sale-card__price-now">37&nbsp;500&nbsp;&#8381;</p>
+                  </div>
+                  <div class="sale-card__text">
+                    <p>Стильное кольцо из белого золота c бриллиантами</p>
+                  </div>
+                </div>
+              </a>
+              <div class="sale-card__parametrs">
+                <div class="custom-select custom-select--sale-card" data-select>
+                  <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                      class="custom-select__text filter"></span><span class="custom-select__icon">
+                      <svg width="18" height="18" viewBox="0 0 11 7">
+                        <use xlink:href="img/sprite.svg#icon-filter"></use>
+                      </svg>
+                    </span></button>
+                  <ul class="custom-select__list baloon-style" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true"
+                      role="option">
+                      Белое золото</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
+                      role="option">
+                      Желтое золото</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
+                      role="option">
+                      Серебро</li>
+                  </ul>
+                </div>
+                <div class="custom-select custom-select--sale-card" data-select>
+                  <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                      class="custom-select__text filter"></span><span class="custom-select__icon">
+                      <svg width="18" height="18" viewBox="0 0 11 7">
+                        <use xlink:href="img/sprite.svg#icon-filter"></use>
+                      </svg>
+                    </span></button>
+                  <ul class="custom-select__list baloon-style" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true"
+                      role="option">
+                      Размер: 16</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
+                      role="option">
+                      Размер: 18</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
+                      role="option">
+                      Размер: 19</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="sale__list-item sale-card">
+              <a href="#" class="sale-card__link" aria-label="Карточка товара кольца из белого золота с бриллиантами"
+                onclick="return false">
+                <div class="sale-card__tools">
+                  <ul class="tools">
+                    <li class="tools__item">
+                      <svg width="20" height="18" viewBox="0 0 20 18">
+                        <use xlink:href="img/sprite.svg#icon-heart-sale"></use>
+                      </svg>
+                    </li>
+                    <li class="tools__item">
+                      <svg width="20" height="20" viewBox="0 0 20 20">
+                        <use xlink:href="img/sprite.svg#icon-eye-sale"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="img/img-sale-ring-4@1x.webp 1x, img/img-sale-ring-4@2x.webp 2x">
+                  <img src="img/img-sale-ring-4@1x.jpg" srcset="img/img-sale-ring-4@2x.jpg 2x" width="200" height="200"
+                    alt="Кольцо из белого золота с бриллиантом">
+                </picture>
+                <div class="sale-card__bullets">
+                  <ul class="bullets">
+                    <li class="bullets__item bullets__item--active">
+                      <span></span>
+                    </li>
+                    <li class="bullets__item">
+                      <span></span>
+                    </li>
+                    <li class="bullets__item">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sale-card__content">
+                  <div class="sale-card__price">
+                    <p class="sale-card__price-now">39&nbsp;200&nbsp;&#8381;</p>
+                  </div>
+                  <div class="sale-card__text">
+                    <p>Стильное кольцо из белого золота c бриллиантами</p>
+                  </div>
+                </div>
+              </a>
+              <div class="sale-card__parametrs">
+                <div class="custom-select custom-select--sale-card" data-select>
+                  <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                      class="custom-select__text filter"></span><span class="custom-select__icon">
+                      <svg width="18" height="18" viewBox="0 0 11 7">
+                        <use xlink:href="img/sprite.svg#icon-filter"></use>
+                      </svg>
+                    </span></button>
+                  <ul class="custom-select__list baloon-style" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true"
+                      role="option">
+                      Белое золото</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
+                      role="option">
+                      Желтое золото</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
+                      role="option">
+                      Серебро</li>
+                  </ul>
+                </div>
+                <div class="custom-select custom-select--sale-card" data-select>
+                  <button class="custom-select__button" type="button" aria-label="Выберите одну из опций"><span
+                      class="custom-select__text filter"></span><span class="custom-select__icon">
+                      <svg width="18" height="18" viewBox="0 0 11 7">
+                        <use xlink:href="img/sprite.svg#icon-filter"></use>
+                      </svg>
+                    </span></button>
+                  <ul class="custom-select__list baloon-style" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true"
+                      role="option">
+                      Размер: 16</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false"
+                      role="option">
+                      Размер: 18</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false"
+                      role="option">
+                      Размер: 19</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

@@ -25,6 +25,11 @@
 @import "components/quantity";
 @import "components/button";
 @import "components/slide";
+@import "components/popular-card";
+@import "components/filter";
+@import "components/sale-card";
+@import "components/bullets";
+@import "components/tools";
 
 // Основные локи
 
@@ -36,8 +41,12 @@
 @import "blocks/header-list";
 @import "blocks/search";
 @import "blocks/promo";
+@import "blocks/popular";
+@import "blocks/sale";
 
 // Стилевые блоки
 
 @import "styles/baloon-style";
 @import "styles/action-style";
+@import "styles/title";
+@import "styles/marker";

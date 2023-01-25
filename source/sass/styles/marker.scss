@@ -1,0 +1,26 @@
+.marker {
+  color: $color-default-white;
+  font-size: 13px;
+  line-height: 100%;
+  padding: 6px 12px 4px;
+  border-radius: 15px;
+
+  @include font-inter-medium;
+
+  &--sale {
+    background-color: $color-half-baked;
+  }
+
+  &--discount {
+    padding: 6px 8px 4px;
+    background-color: $color-cinnabar;
+  }
+
+  &--hit {
+    background-color: $color-porsche;
+  }
+
+  &--new {
+    background-color: $color-cello;
+  }
+}

@@ -1,0 +1,23 @@
+.popular {
+  width: 100%;
+  margin: 0 0 120px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 0 0 40px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 259px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}

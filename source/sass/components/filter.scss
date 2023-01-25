@@ -1,0 +1,34 @@
+.filter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 70%;
+  gap: 8px;
+
+  &__link {
+    font-size: 14px;
+    line-height: 100%;
+    background-color: $color-white-smoke;
+    border-radius: 21px;
+    padding: 14px 30px 13px;
+    transition: background-color $trans-default, color $trans-default;
+
+    &:hover {
+      background-color: $color-gainsboro3;
+      color: $color-night-rider;
+    }
+
+    &:active,
+    &:focus {
+      background-color: $color-night-rider;
+      color: $color-default-white;
+    }
+  }
+
+  &__link--active {
+    background-color: $color-night-rider;
+    color: $color-default-white;
+  }
+}

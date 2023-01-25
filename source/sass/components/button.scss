@@ -10,7 +10,17 @@
   transition: opacity $trans-default, background-color $trans-default,
     color $trans-default;
 
-    @include font-inter-medium;
+  @include font-inter-medium;
+
+  &:hover {
+    background-color: $color-matterhorn;
+    transition: background-color $trans-default;
+  }
+
+  &:active {
+    background-color: $color-default-black;
+    transition: background-color $trans-default;
+  }
 
   &--slider {
     background-color: transparent;
