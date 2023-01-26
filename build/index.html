@@ -203,7 +203,7 @@
         <div class="popular__wrapper">
           <h2 class="popular__title title">Популярные категории</h2>
           <ul class="popular__list">
-            <li class="popular__item popular-card action-style">
+            <li class="popular__item popular-card">
               <a href="#" class="popular-card__link" aria-label="Перейти в раздел кольца" onclick="return false">
                 <picture>
                   <source type="image/webp" srcset="img/img-popular-rings@1x.webp 1x, img/img-popular-rings@2x.webp 2x">
@@ -213,7 +213,7 @@
                 <p>Кольца</p>
               </a>
             </li>
-            <li class="popular__item popular-card action-style">
+            <li class="popular__item popular-card">
               <a href="#" class="popular-card__link" aria-label="Перейти в раздел серьги" onclick="return false">
                 <picture>
                   <source type="image/webp"
@@ -224,7 +224,7 @@
                 <p>Серьги</p>
               </a>
             </li>
-            <li class="popular__item popular-card action-style">
+            <li class="popular__item popular-card">
               <a href="#" class="popular-card__link" aria-label="Перейти в раздел помолвочные кольца"
                 onclick="return false">
                 <picture>
@@ -236,7 +236,7 @@
                 <p>Помолвочные кольца</p>
               </a>
             </li>
-            <li class="popular__item popular-card action-style">
+            <li class="popular__item popular-card">
               <a href="#" class="popular-card__link" aria-label="Перейти в раздел браслеты" onclick="return false">
                 <picture>
                   <source type="image/webp"
@@ -247,7 +247,7 @@
                 <p>Браслеты</p>
               </a>
             </li>
-            <li class="popular__item popular-card action-style">
+            <li class="popular__item popular-card">
               <a href="#" class="popular-card__link" aria-label="Перейти в раздел Колье и подвески"
                 onclick="return false">
                 <picture>
@@ -259,7 +259,7 @@
                 <p>Колье и подвески</p>
               </a>
             </li>
-            <li class="popular__item popular-card action-style">
+            <li class="popular__item popular-card">
               <a href="#" class="popular-card__link" aria-label="Перейти в раздел часы" onclick="return false">
                 <picture>
                   <source type="image/webp"
@@ -946,54 +946,56 @@
             <h2 class="articles__title title">Статьи</h2>
             <a class="articles__header-link" href="#" aria-label="Перейти ко всем статьям" onclick="return false">Читать
               все
-              <svg width="17" height="8" viewBox="0 0 17 8">
-                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-              </svg>
+              <div class="articles__header-link-deco">
+                <svg width="17" height="8" viewBox="0 0 17 8">
+                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </div>
             </a>
           </div>
           <ul class="articles__list">
-            <li class="articles__item">
-              <a class="articles__link" href="#" aria-label="Читать статью" onclick="return false">
+            <li class="articles__item article-card">
+              <a class="article-card__link" href="#" aria-label="Читать статью" onclick="return false">
                 <picture>
                   <source type="image/webp" srcset="img/img-article-1@1x.webp 1x, img/img-article-1@2x.webp 2x">
                   <img src="img/img-article-1@1x.jpg" srcset="img/img-article-1@2x.jpg 2x" width="310" height="381"
                     alt="Золотые украшения на стеклянном подносе">
                 </picture>
                 <time datetime="2021.09.21">21 сентября 2021</time>
-                <p class="article__title">Обручальные кольца: тренды 2021</p>
+                <p class="article-card__title">Обручальные кольца: тренды 2021</p>
               </a>
             </li>
-            <li class="articles__item">
-              <a class="articles__link" href="#" aria-label="Читать статью" onclick="return false">
+            <li class="articles__item article-card">
+              <a class="article-card__link" href="#" aria-label="Читать статью" onclick="return false">
                 <picture>
                   <source type="image/webp" srcset="img/img-article-2@1x.webp 1x, img/img-article-2@2x.webp 2x">
                   <img src="img/img-article-2@1x.jpg" srcset="img/img-article-2@2x.jpg 2x" width="310" height="381"
                     alt="Бусы на шее у девушки">
                 </picture>
                 <time datetime="2021.09.25">25 сентября 2021</time>
-                <p class="article__title">Главные ювелирные тренды года</p>
+                <p class="article-card__title">Главные ювелирные тренды года</p>
               </a>
             </li>
-            <li class="articles__item">
-              <a class="articles__link" href="#" aria-label="Читать статью" onclick="return false">
+            <li class="articles__item article-card">
+              <a class="article-card__link" href="#" aria-label="Читать статью" onclick="return false">
                 <picture>
                   <source type="image/webp" srcset="img/img-article-3@1x.webp 1x, img/img-article-3@2x.webp 2x">
                   <img src="img/img-article-3@1x.jpg" srcset="img/img-article-3@2x.jpg 2x" width="310" height="381"
                     alt="Изделия из золота и жемчуга">
                 </picture>
                 <time datetime="2021.09.25">21 сентября 2021</time>
-                <p class="article__title">Жемчуг: 7 малоизвестных фактов о культовом украшении</p>
+                <p class="article-card__title">Жемчуг: 7 малоизвестных фактов о культовом украшении</p>
               </a>
             </li>
-            <li class="articles__item">
-              <a class="articles__link" href="#" aria-label="Читать статью" onclick="return false">
+            <li class="articles__item article-card">
+              <a class="article-card__link" href="#" aria-label="Читать статью" onclick="return false">
                 <picture>
                   <source type="image/webp" srcset="img/img-article-4@1x.webp 1x, img/img-article-4@2x.webp 2x">
                   <img src="img/img-article-4@1x.jpg" srcset="img/img-article-4@2x.jpg 2x" width="310" height="381"
                     alt="Золотое ожерелье на руки">
                 </picture>
                 <time datetime="2021.09.25">21 сентября 2021</time>
-                <p class="article__title">Как отличить золото от подделки: 10 практических советов</p>
+                <p class="article-card__title">Как отличить золото от подделки: 10 практических советов</p>
               </a>
             </li>
           </ul>

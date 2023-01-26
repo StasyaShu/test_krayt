@@ -10,6 +10,7 @@ const initSwiper = () => {
   const buttonPrev = document.querySelector('.promo__controls--prev');
   // eslint-disable-next-line
   const swiper = new Swiper(slider, {
+    speed: 900,
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,

@@ -14,8 +14,7 @@
       transition: $trans-default;
     }
 
-    &:active,
-    &:focus {
+    &:active {
       color: $color-cinnabar;
       transition: color $trans-default;
     }

@@ -1,0 +1,40 @@
+.article-card {
+  transition: all $trans-default;
+
+  &__link {
+  height: 100%;
+   display: flex;
+   flex-direction: column;
+
+   img {
+    margin: 0 0 20px;
+   }
+
+   time {
+    font-size: 14px;
+    line-height: 100%;
+    color: $color-suva-grey;
+    margin: 0 0 12px;
+   }
+  }
+
+  &__title {
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    width: 91%;
+
+    @include font-inter-medium;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition: all $trans-default;
+
+    .article-card__title {
+      text-decoration: underline;
+    }
+  }
+}

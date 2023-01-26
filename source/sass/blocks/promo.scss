@@ -69,6 +69,12 @@
   height: 8px;
   border-radius: 50%;
   border: 1px solid $color-night-rider;
+  transition: transform $trans-default;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: transform $trans-default;
+  }
 }
 
 .promo__container .swiper-pagination-bullet-active {
