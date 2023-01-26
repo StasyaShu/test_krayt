@@ -6,7 +6,7 @@
   font-size: 14px;
   line-height: 100%;
   text-transform: uppercase;
-  padding: 24px 0;
+  padding: 21px 0;
   transition: opacity $trans-default, background-color $trans-default,
     color $trans-default;
 
@@ -20,6 +20,12 @@
   &:active {
     background-color: $color-default-black;
     transition: background-color $trans-default;
+  }
+
+  &--one-click {
+    background-color: transparent;
+    border: 1px solid $color-night-rider;
+    color: $color-night-rider;
   }
 
   &--slider {

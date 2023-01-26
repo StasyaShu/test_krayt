@@ -1,0 +1,63 @@
+.radio-size {
+  cursor: pointer;
+  width: 50px;
+  height: 32px;
+  opacity: 0;
+}
+
+.radio-size + span::before {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: $color-white-smoke;
+  color: $color-night-rider;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 32px;
+  text-align: center;
+  padding-top: 9px;
+  font-size: 14px;
+  line-height: 100%;
+  z-index: -1;
+}
+
+.radio-size:hover + span::before {
+  background-color: $color-very-light-grey;
+  color: $color-night-rider;
+  transition: all $trans-03;
+}
+
+.radio-size:checked + span::before {
+  background-color: $color-night-rider;
+  color: $color-default-white;
+}
+
+.radio-size:disabled {
+  pointer-events: none;
+}
+
+.radio-size:disabled + span::before {
+  color: $color-very-light-grey;
+}
+
+.radio-size--165 + span::before {
+  content: "16,5";
+}
+
+.radio-size--175 + span::before {
+  content: "17,5";
+}
+
+.radio-size--185 + span::before {
+  content: "18,5";
+}
+
+.radio-size--19 + span::before {
+  content: "19";
+}
+
+.radio-size--195 + span::before {
+  content: "19,5";
+}

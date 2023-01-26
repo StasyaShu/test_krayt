@@ -6,4 +6,16 @@
   color: $color-night-rider;
 
   @include font-prata-regular;
+
+  &--goods-title {
+    font-size: 32px;
+  }
+
+  &--subtitle {
+    font-size: 12px;
+    text-transform: uppercase;
+
+    @include font-inter-semibold;
+  }
 }
+

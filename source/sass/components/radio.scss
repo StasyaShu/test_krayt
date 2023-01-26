@@ -1,0 +1,45 @@
+.radio {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  opacity: 0;
+}
+
+.radio + span::before {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border: 2px solid $color-default-white;
+  box-shadow: 0px 0px 0px 1px $color-gainsboro;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.radio--black + span::before {
+  background-color: $color-night-rider;
+}
+
+.radio--yellow + span::before {
+  background-color: $color-cherokee;
+}
+
+.radio--orange + span::before {
+  background-color: $color-flamenco;
+}
+
+.radio--green + span::before {
+  background-color: $color-granny-smith-apple;
+}
+
+.radio:checked + span::before {
+  box-shadow: 0px 0px 0px 1px $color-night-rider;
+}
+
+.radio:hover + span::before {
+  box-shadow: 0px 0px 0px 1px $color-night-rider;
+  border: 1px solid $color-default-white;
+}
