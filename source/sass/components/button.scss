@@ -57,6 +57,21 @@
     }
   }
 
+  &--slider-hit {
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    color: $color-night-rider;
+    transition: opacity $trans-default;
+
+    &:hover {
+      background-color: transparent;
+      opacity: 0.3;
+      transition: opacity $trans-default;
+    }
+  }
+
   &--disabled {
     pointer-events: none;
     opacity: 0.2;

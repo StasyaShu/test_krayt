@@ -1,20 +1,54 @@
 .discount-card {
   background-color: $color-white-smoke2;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -152px;
+    width: 456px;
+    height: 352px;
+    background-image: url("../img/svg/deco-diamond.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    z-index: -1;
+  }
 
   &__wrapper {
     width: 100%;
     padding: 72px 0 45px 0;
-    position: relative;
 
     img {
       position: absolute;
       top: 0;
       right: 0;
+      object-fit: contain;
+    }
+  }
+
+  &__wrapper--diamond {
+    img {
+      top: 3px;
+      right: -96px;
+      width: 419px;
+      height: 285px;
+    }
+  }
+
+  &__wrapper--gold {
+    img {
+      top: 43px;
+      right: -178px;
     }
   }
 
   &__text {
     margin: 0 0 19px;
+    padding: 0 0 0 26px;
 
     p {
       width: 58%;
@@ -63,6 +97,5 @@
     &--hight {
       background-color: $color-porsche;
     }
-
   }
 }

@@ -658,13 +658,13 @@
         </div>
       </div>
     </section>
-    <section class="discout">
+    <section class="discount">
       <div class="container">
         <h2 class="visually-hidden">Скидочные акции</h2>
         <div class="discount__wrapper">
           <ul class="discount__list">
             <li class="discount__item discount-card">
-              <div class="discount-card__wrapper">
+              <div class="discount-card__wrapper discount-card__wrapper--emerald">
                 <div class="discount-card__text">
                   <p>Скидки на&nbsp;все&nbsp;украшения с&nbsp;бриллиантами</p>
                 </div>
@@ -679,7 +679,7 @@
               </div>
             </li>
             <li class="discount__item discount-card">
-              <div class="discount-card__wrapper">
+              <div class="discount-card__wrapper discount-card__wrapper--diamond">
                 <div class="discount-card__text">
                   <p>Скидки на&nbsp;кольца и&nbsp;браслеты</p>
                 </div>
@@ -694,7 +694,7 @@
               </div>
             </li>
             <li class="discount__item discount-card">
-              <div class="discount-card__wrapper">
+              <div class="discount-card__wrapper discount-card__wrapper--gold">
                 <div class="discount-card__text">
                   <p>Снижение&nbsp;цен на&nbsp;обручальные кольца</p>
                 </div>
@@ -709,6 +709,64 @@
               </div>
             </li>
           </ul>
+        </div>
+      </div>
+    </section>
+    <section class="hit">
+      <div class="container">
+        <div class="hit__wrapper">
+          <div class="hit__header">
+            <h2 class="hit__title title">Товар дня</h2>
+            <div class="hit__slider-buttons">
+              <button class="button button--slider button--slider-prev" type="button"><span
+                  class="visually-hidden">Прокрутить назад</span>
+                <svg width="17" height="8" viewBox="0 0 17 8">
+                  <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="button button--slider button--slider-next" type="button"><span
+                  class="visually-hidden">Прокрутить вперед</span>
+                <svg width="17" height="8" viewBox="0 0 17 8">
+                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="hit__content hit-card">
+            <div class="hit-card__picture">
+              <ul class="hit-card__markers">
+                <li class="hit-card__marker-item">
+                  <span class="marker marker--new">New</span>
+                </li>
+                <li class="hit-card__marker-item">
+                  <span class="marker marker--hit">Хит</span>
+                </li>
+                <li class="hit-card__marker-item">
+                  <span class="marker marker--sale">Sale</span>
+                </li>
+              </ul>
+              <div class="hit-card__picture-wrapper">
+                <button class="button button--slider-hit button--disabled" type="button">
+                  <span class="visually-hidden">Перейти к прерыдущему изображению</span>
+                  <svg width="10" height="16" viewBox="0 0 10 16">
+                    <use xlink:href="img/sprite.svg#icon-mark-left"></use>
+                  </svg>
+                </button>
+                <picture>
+                  <source type="image/webp" srcset="img//img-hit-ring@1x.webp 1x, img//img-hit-ring@2x.webp 2x">
+                  <img src="img/img-hit-ring@1x.png" srcset="img/img-hit-ring@2x.png 2x" width="550" height="550" alt="Кольцо из красного золота с бриллиантами">
+                </picture>
+
+                <button class="button button--slider-hit" type="button">
+                  <span class="visually-hidden">Перейти к следующему изображению</span>
+                  <svg width="10" height="16" viewBox="0 0 10 16">
+                    <use xlink:href="img/sprite.svg#icon-mark-right"></use>
+                  </svg>
+                </button>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
     </section>
