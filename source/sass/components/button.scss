@@ -14,7 +14,7 @@
 
   &:hover {
     background-color: $color-matterhorn;
-    transition: background-color $trans-default;
+    transition: all $trans-default;
   }
 
   &:active {
@@ -26,6 +26,15 @@
     background-color: transparent;
     border: 1px solid $color-night-rider;
     color: $color-night-rider;
+
+    &:hover {
+      background-color: $color-night-rider;
+      color: $color-default-white;
+    }
+
+    &:active {
+      background-color: $color-default-black;
+    }
   }
 
   &--slider {

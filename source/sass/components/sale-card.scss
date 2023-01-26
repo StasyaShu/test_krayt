@@ -32,7 +32,6 @@
 
   &__bullets {
     z-index: 6;
-    cursor: pointer;
     margin: -8px 0 32px;
     align-self: center;
   }
@@ -45,27 +44,6 @@
   &__price {
     margin: 0 0 16px;
   }
-
-  // &__marker-discount {
-  //   margin: 0 0 0 auto;
-  // }
-
-  // &__price-now {
-  //   display: block;
-  //   margin: 0 8px 0 0;
-  //   padding: 0;
-  //   font-size: 18px;
-  //   line-height: 100%;
-
-  //   @include font-inter-semibold;
-  // }
-
-  // &__price-old {
-  //   font-size: 14px;
-  //   line-height: 100%;
-  //   text-decoration-line: line-through;
-  //   color: $color-suva-grey;
-  // }
 
   &__text {
 

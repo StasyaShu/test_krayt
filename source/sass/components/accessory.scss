@@ -1,0 +1,62 @@
+.accessory {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__item:not(:last-child) {
+    margin: 0 0 18px;
+  }
+
+  &__button {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 100%;
+    transition: all $trans-default;
+
+    @include font-inter-light;
+
+    svg {
+      color: $color-very-light-grey;
+      margin: 0 8px 0 0;
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      color: $color-nobel2;
+      transition: all $trans-default;
+
+      svg {
+        color: $color-nobel2;
+        transition: all $trans-default;
+      }
+    }
+
+    &:active,
+    &:focus {
+      color: $color-night-rider;
+      transition: all $trans-default;
+
+      svg {
+        color: $color-cinnabar;
+        transition: all $trans-default;
+      }
+    }
+  }
+}
+
+.accessory__button--save {
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}

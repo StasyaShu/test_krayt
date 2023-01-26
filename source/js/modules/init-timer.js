@@ -10,13 +10,13 @@ const getTimeRemaining = (time) => {
     return false;
   }
 
-  const days = Math.floor(diff / 60 / 60 / 24);
-  const hours = Math.floor((diff / 60 / 60) % 24);
+  // const days = Math.floor(diff / 60 / 60 / 24);
+  const hours = Math.floor((diff / 60 / 60)); // рассчет часов с днями Math.floor((diff / 60 / 60) % 24)
   const minuts = Math.floor((diff / 60) % 60);
   const seconds = Math.floor(diff % 60);
 
   return {
-    days,
+    // days,
     hours,
     minuts,
     seconds,

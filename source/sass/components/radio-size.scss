@@ -10,7 +10,8 @@
   position: absolute;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: $color-white-smoke;
+  background-color: transparent;
+  border: 1px solid $color-gainsboro;
   color: $color-night-rider;
   left: 0;
   top: 0;
@@ -21,16 +22,18 @@
   font-size: 14px;
   line-height: 100%;
   z-index: -1;
+  transition: all $trans-default;
 }
 
 .radio-size:hover + span::before {
-  background-color: $color-very-light-grey;
+  border: 1px solid $color-night-rider;
   color: $color-night-rider;
   transition: all $trans-default;
 }
 
 .radio-size:checked + span::before {
   background-color: $color-night-rider;
+  border: 1px solid $color-night-rider;
   color: $color-default-white;
 }
 

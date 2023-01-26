@@ -1,0 +1,47 @@
+.rate {
+  display: flex;
+  align-items: center;
+  margin: 0 0 24px;
+
+  &__stars {
+    padding: 0;
+    margin: 0 10px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__star {
+    cursor: pointer;
+    color: $color-porsche;
+    transition: transform $trans-default;
+
+    svg {
+      width: 17px;
+      height: 17px;
+      stroke: $color-porsche;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      transition: transform $trans-default
+    }
+  }
+
+  &__star:not(:last-child) {
+    margin: 0 6px 0 0;
+  }
+
+  &__star:last-child {
+    color: transparent;
+
+    svg {
+      stroke: $color-porsche;
+    }
+  }
+
+  &__number {
+    font-size: 14px;
+    line-height: 100%;
+  }
+}

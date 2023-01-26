@@ -1,0 +1,60 @@
+.goods-info {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0 0 20px;
+  }
+
+  &__vendor-code {
+    font-size: 14px;
+    line-height: 100%;
+    color: $color-suva-grey;
+    margin: 0 0 2px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 31px;
+    margin: 0 0 30px;
+    border-bottom: 1px solid $color-white-smoke;
+  }
+
+  &__color {
+    margin: 0 0 30px;
+  }
+
+  &__measures {
+    margin: 0 0 40px;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: 1fr 0.52fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 39px;
+  }
+
+  &__accessory {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+  }
+}
+
+.goods-info__price .price-discount {
+  margin: 0 36px 0 0;
+}
+
+.goods-info__price .price-discount__price-now {
+  margin: 0 16px 0 0;
+}
+
+.goods-info__price .price-discount__price-old {
+  margin: 0 16px 0 0;
+}
+
+.goods-info__price .price-discount__marker-discount {
+  margin: 0;
+}

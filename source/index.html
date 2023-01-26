@@ -600,13 +600,13 @@
           <div class="hit__content hit-card">
             <div class="hit-card__picture">
               <ul class="hit-card__markers">
-                <li class="hit-card__marker-item">
+                <li class="hit-card__markers-item">
                   <span class="marker marker--new">New</span>
                 </li>
-                <li class="hit-card__marker-item">
+                <li class="hit-card__markers-item">
                   <span class="marker marker--hit">Хит</span>
                 </li>
-                <li class="hit-card__marker-item">
+                <li class="hit-card__markers-item">
                   <span class="marker marker--sale">Sale</span>
                 </li>
               </ul>
@@ -691,15 +691,17 @@
                   </div>
                 </div>
                 <div class="goods-info__color feature">
-                  <p class="feature__title title title--subtitle">Цвет</p>
+                  <div class="feature__header">
+                    <p class="feature__title">Цвет</p>
+                  </div>
                   <ul class="color" data-radio>
                     <li class="color__item">
-                      <input class="radio radio--black" type="radio" name="color" value="black" data-color="black"
-                        checked>
+                      <input class="radio radio--black" type="radio" name="color" value="black" data-color="black">
                       <span></span>
                     </li>
                     <li class="color__item">
-                      <input class="radio radio--yellow" type="radio" name="color" value="yellow" data-color="blue">
+                      <input class="radio radio--yellow" type="radio" name="color" value="yellow" data-color="blue"
+                        checked>
                       <span></span>
                     </li>
                     <li class="color__item">
@@ -714,8 +716,14 @@
                 </div>
                 <div class="goods-info__measures feature">
                   <div class="feature__header">
-                    <p class="feature__title title title--subtitle">Размер</p>
-                    <span class="question">?</span>
+                    <p class="feature__title">Размер</p>
+                    <div class="question">
+                      <span>?</span>
+                      <div class="question__popup baloon-style">
+                        <p>Также как существующая теория напрямую зависит от экономической целесообразности принимаемых
+                          решений.</p>
+                      </div>
+                    </div>
                   </div>
                   <ul class="size">
                     <li class="size__item">
@@ -763,9 +771,9 @@
                 <div class="goods-info__buttons">
                   <button class="button" type="submit">В корзину</button>
                   <button class="button button--one-click" type="button">Купить в один клик</button>
-                  <ul class="accessory">
+                  <ul class="goods-info__accessory accessory">
                     <li class="accessory__item">
-                      <button class="accessory__button" type="button">
+                      <button class="accessory__button accessory__button--save" type="button">
                         <svg width="20" height="18" viewBox="0 0 20 18">
                           <use xlink:href="img/sprite.svg#icon-heart-sale"></use>
                         </svg>

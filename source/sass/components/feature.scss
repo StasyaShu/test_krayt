@@ -1,0 +1,17 @@
+.feature {
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin: 0 0 16px;
+  }
+
+  &__title {
+    margin: 0 8px 0 0;
+    padding: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    @include font-inter-semibold;
+  }
+}
