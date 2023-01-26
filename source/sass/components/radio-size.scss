@@ -26,7 +26,7 @@
 .radio-size:hover + span::before {
   background-color: $color-very-light-grey;
   color: $color-night-rider;
-  transition: all $trans-03;
+  transition: all $trans-default;
 }
 
 .radio-size:checked + span::before {

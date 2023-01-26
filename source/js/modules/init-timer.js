@@ -1,4 +1,4 @@
-import {inclineWord} from '../utils/incline-word';
+import {inclineWord} from '../utils/incline-word.js';
 
 const timerBlock = document.querySelector('[data-timer-date]');
 let timer;
@@ -43,7 +43,7 @@ const initTimer = () => {
     return;
   }
 
-  const dayWrap = timerBlock.querySelector('[data-timer-day]');
+  // const dayWrap = timerBlock.querySelector('[data-timer-day]');
   const hourWrap = timerBlock.querySelector('[data-timer-hour]');
   const minutWrap = timerBlock.querySelector('[data-timer-minut]');
   const secondWrap = timerBlock.querySelector('[data-timer-second]');
@@ -54,7 +54,7 @@ const initTimer = () => {
     const timerTitle = document.querySelector('[data-timer-title]');
     if (!time) {
       timerList.style.display = 'none';
-      timerTitle.textContent = 'Форум Лидеров';
+      timerTitle.textContent = 'Конец распродажи';
       const nowDate = new Date();
       const dateSpan = document.createElement('span');
       dateSpan.textContent = formatRusdate(nowDate);
@@ -63,7 +63,7 @@ const initTimer = () => {
       clearInterval(timer);
       return;
     }
-    updateTime(dayWrap, time.days, 'dayEndings');
+    // updateTime(dayWrap, time.days, 'dayEndings');
     updateTime(hourWrap, time.hours, 'hourEndings');
     updateTime(minutWrap, time.minuts, 'minutEndings');
     updateTime(secondWrap, time.seconds, 'secondEndings');

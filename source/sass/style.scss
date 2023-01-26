@@ -32,14 +32,18 @@
 @import "components/tools";
 @import "components/discount-card";
 @import "components/price-discount";
+@import "components/hit-card";
+@import "components/goods-info";
+@import "components/rate";
 @import "components/timer";
 @import "components/color";
 @import "components/size";
 @import "components/radio";
 @import "components/radio-size";
 @import "components/accessory";
+@import "components/feature";
 
-// Основные локи
+// Основные блоки
 
 @import "blocks/city-select";
 @import "blocks/phone";
@@ -52,6 +56,8 @@
 @import "blocks/popular";
 @import "blocks/sale";
 @import "blocks/discount";
+@import "blocks/hit";
+@import "blocks/articles";
 
 // Стилевые блоки
 
