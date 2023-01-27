@@ -1,9 +1,12 @@
 .quantity {
+  width: 19px;
+  height: 19px;
   font-size: 10px;
   color: $color-default-white;
   background-color: $color-sorbus;
   border-radius: 50%;
-  padding: 3px;
+  padding: 2px 3px;
+  text-align: center;
 
   @include font-inter-bold;
 }
