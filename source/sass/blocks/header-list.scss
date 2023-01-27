@@ -52,6 +52,10 @@
       margin: 7px 40px 7px 0;
     }
 
+    @media (max-width: 1215px) {
+      margin: 7px 20px 7px 0;
+    }
+
     @include tablet {
       margin: 5px 20px 5px 0;
     }
@@ -96,7 +100,7 @@
 
     @include font-inter-medium;
 
-    @include tablet {
+    @media (max-width: 1215px) {
       font-size: 11px;
     }
 

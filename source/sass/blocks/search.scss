@@ -4,6 +4,14 @@
   padding: 25px 0 25px 26px;
   border-left: 1px solid $color-white-smoke;
 
+  @media (max-width: 1215px) {
+    padding: 15px 0 15px 16px;
+  }
+
+  @include tablet {
+    width: 25%;
+  }
+
   @include mobile {
     border-left: none;
     border-top: 1px solid $color-white-smoke;
@@ -12,7 +20,13 @@
   }
 
   svg {
+    width: 16px;
+    height: 16px;
     margin: 0 15px 0 0;
+
+    @include tablet {
+      margin: 0 8px 0 0;
+    }
   }
 
   input {
@@ -23,7 +37,7 @@
       outline: none;
     }
 
-    @include mobile {
+    @include tablet {
       width: 100%;
     }
   }
