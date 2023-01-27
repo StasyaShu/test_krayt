@@ -2,7 +2,6 @@ import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import rename from 'gulp-rename';
 import cleanCss from 'gulp-clean-css'; //Сжатие CSS файла
-import webpcss from 'gulp-webpcss'; //Вывод WEBP изображений
 import autoprefixer from 'gulp-autoprefixer'; //Добавление вендорных префиксов(кроссбраузерность)
 import groupCssMediaQueries from 'gulp-group-css-media-queries'; //Группировка медиа запросов
 import postcss from 'gulp-postcss';
@@ -22,10 +21,6 @@ export const scss = () => {
             outputStyle: 'expanded'
         }))
         .pipe(groupCssMediaQueries())
-        .pipe(webpcss({
-            webpClass: ".webp",
-            noWebpClass: ".no-webp"
-        }))
         .pipe(postcss([
           csso(),
         ]))
