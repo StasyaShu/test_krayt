@@ -1,9 +1,0 @@
-.action-style {
-  transition: opacity $trans-default;
-
-  &:hover,
-  &:active {
-    opacity: 0.3;
-    transition: opacity $trans-default;
-  }
-}

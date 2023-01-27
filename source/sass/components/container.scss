@@ -4,6 +4,18 @@
   margin: 0 auto;
   padding: 0 310px;
 
+  @media (max-width: 1815px) {
+    padding: 0 150px;
+  }
+
+  @media (max-width: 1510px) {
+    padding: 0 100px;
+  }
+
+  @media (max-width: 1395px) {
+    padding: 0 80px;
+  }
+
   @include tablet {
     padding: 0 30px;
   }

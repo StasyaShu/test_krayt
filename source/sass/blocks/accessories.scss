@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 0 0 auto;
   padding: 0;
 
   &__item:not(:last-child) {
@@ -16,6 +15,15 @@
       position: absolute;
       top: -8px;
       right: -12px;
+    }
+  }
+
+  &__link {
+    transition: opacity $trans-default;
+
+    &:hover {
+      opacity: 0.3;
+      transition: opacity $trans-default;
     }
   }
 }

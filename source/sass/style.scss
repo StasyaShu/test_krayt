@@ -19,8 +19,6 @@
 
 @import "components/container";
 @import "components/overlay";
-@import "components/header";
-@import "components/footer";
 @import "components/custom-select";
 @import "components/quantity";
 @import "components/button";
@@ -46,6 +44,8 @@
 
 // Основные блоки
 
+@import "blocks/header";
+@import "blocks/footer";
 @import "blocks/city-select";
 @import "blocks/phone";
 @import "blocks/logo";
@@ -63,7 +63,6 @@
 // Стилевые блоки
 
 @import "styles/baloon-style";
-@import "styles/action-style";
 @import "styles/title";
 @import "styles/marker";
 @import "styles/question";

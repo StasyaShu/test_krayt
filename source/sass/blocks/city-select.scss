@@ -1,9 +1,8 @@
 .city-select {
   display: flex;
   align-items: center;
-  margin: 0 60px 0 0;
 
-  svg {
+  &__deco {
     margin: 0 8px 0 0;
   }
 }

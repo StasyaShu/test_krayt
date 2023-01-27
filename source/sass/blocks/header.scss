@@ -1,0 +1,165 @@
+.header {
+  width: 100%;
+  font-size: 14px;
+  line-height: 100%;
+  color: $color-night-rider;
+  margin: 0 0 20px;
+
+  &__wrapper {
+    padding: 24px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include mobile {
+      position: relative;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__contacts {
+    width: 31%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media (max-width: 1325px) {
+      width: 32%;
+    }
+
+    @media (max-width: 1273px) {
+      width: 38%;
+    }
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @include mobile {
+      width: 100%;
+      order: 3;
+    }
+  }
+
+  &__logo {
+    margin: 0 auto 23px;
+
+    @include mobile {
+      margin: 0 0 30px;
+    }
+  }
+
+  &__city-select {
+    margin: 0 60px 10px 0;
+
+    @media (max-width: 1100px) {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__phone {
+    margin: 0 0 10px;
+  }
+
+  &__personal-area {
+    @media (max-width: 1100px) {
+      margin: 0 0 15px;
+    }
+
+    @include mobile {
+      margin: 0 0 30px;
+    }
+  }
+
+  &__accessories {
+    margin: 0 0 0 70px;
+
+    @media (max-width: 1100px) {
+      margin: 0;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @include mobile {
+      display: block;
+      align-self: flex-start;
+    }
+  }
+
+  &__personal {
+    width: 28%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media (max-width: 1325px) {
+      width: 29%;
+    }
+
+    @media (max-width: 1273px) {
+      width: 35%;
+    }
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    @include mobile {
+      align-items: flex-start;
+      position: absolute;
+      background-color: #fff;
+      padding: 25px 0;
+      top: 0;
+      transform: translateY(-100%);
+      left: 0;
+      z-index: 5;
+      width: 100%;
+      opacity: 0;
+      transition: all $trans-modal;
+    }
+  }
+
+  &__links {
+    display: none;
+    width: 100%;
+
+    @include mobile {
+      position: absolute;
+      top: 0;
+      transform: translateY(-100%);
+      left: 0;
+      z-index: 5;
+      opacity: 0;
+      transition: all $trans-modal;
+    }
+  }
+}
+
+.header.is-open {
+
+  @include mobile {
+    height: 100vh;
+    height: calc(100 * var(--vh, 1vh));
+
+    .header__personal {
+      top: 100%;
+      transform: translateY(0);
+      opacity: 1;
+      transition: all $trans-modal;
+    }
+
+    .header__links {
+      top: 170%;
+      transform: translateY(0);
+      opacity: 1;
+      transition: all $trans-modal;
+    }
+  }
+}

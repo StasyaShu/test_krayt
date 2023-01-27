@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
 
   &__item:not(:last-child) {
     position: relative;
-    margin: 0 10px 0 0;
+    margin: 0 10px 10px 0;
     padding: 0 10px 0 0;
 
     &::after {
@@ -20,6 +21,19 @@
       background-color: $color-night-rider;
       right: 0;
       top: 0;
+    }
+  }
+
+  &__item:last-child {
+    margin: 0 0 10px 0;
+  }
+
+  &__link {
+    transition: opacity $trans-default;
+
+    &:hover {
+      opacity: 0.3;
+      transition: opacity $trans-default;
     }
   }
 }
