@@ -61,7 +61,6 @@
     position: relative;
     font-weight: 400;
     font-size: 16px;
-    line-height: 100%;
     font-family: $ff-inter;
     white-space: nowrap;
     color: $color-night-rider;
@@ -104,7 +103,6 @@
 
   &__text {
     font-size: 14px;
-    line-height: 100%;
     flex-shrink: 0;
     width: 100%;
     overflow: hidden;
