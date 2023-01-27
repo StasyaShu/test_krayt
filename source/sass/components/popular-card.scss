@@ -3,6 +3,10 @@
   padding: 37px 20px 25px;
   transition: all $trans-default;
 
+  @include mobile {
+    padding: 25px 10px 18px;
+  }
+
   &__link {
     display: flex;
     flex-direction: column;

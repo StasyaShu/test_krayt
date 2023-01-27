@@ -1,17 +1,48 @@
 .slide {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0 103px;
+
+  @include tablet {
+    grid-template-columns: 0.7fr 1fr;
+    padding: 0 70px;
+  }
+
+  @include mobile {
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  picture {
+    @include mobile {
+      margin: -232px 0 0 0;
+      z-index: 0;
+    }
+  }
 
   img {
     width: 548px;
     height: 548px;
     object-fit: contain;
+
+    @include mobile {
+      width: 350px;
+      height: 350px;
+      opacity: 0.4;
+    }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include mobile {
+      z-index: 1;
+      padding: 25% 0 0 0;
+    }
   }
 
   &__text {
@@ -23,16 +54,42 @@
 
     @include font-prata-regular;
 
+    @media (max-width: 1200px) {
+      font-size: 15px;
+    }
+
+    @include mobile {
+      margin: 0 0 44px;
+      font-size: 15px;
+    }
+
     span {
       text-transform: uppercase;
       font-size: 50px;
       display: block;
       margin: 40px 0 0 0;
       white-space: nowrap;
+
+      @media (max-width: 1200px) {
+        font-size: 30px;
+        margin: 25px 0 0 0;
+      }
+
+      @include mobile {
+        font-size: 20px;
+      }
     }
   }
 
   &__button {
     width: 40%;
+
+    @media (max-width: 1200px) {
+      width: 57%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }

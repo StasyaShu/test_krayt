@@ -7,6 +7,14 @@
 
   @include font-prata-regular;
 
+  @include tablet {
+    font-size: 30px;
+  }
+
+  @include mobile {
+    font-size: 25px;
+  }
+
   &--goods-title {
     font-size: 32px;
   }

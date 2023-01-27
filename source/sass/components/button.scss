@@ -12,6 +12,10 @@
 
   @include font-inter-medium;
 
+  @include mobile {
+    padding: 12px 0;
+  }
+
   &:hover {
     background-color: $color-matterhorn;
     transition: all $trans-default;
@@ -45,10 +49,25 @@
     border-radius: 50%;
     border: 1px solid $color-night-rider;
     color: $color-night-rider;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      width: 40px;
+      height: 40px;
+    }
 
     svg {
+      width: 17px;
+      height: 8px;
       transform: translateX(0);
       transition: transform $trans-default;
+
+      @include mobile {
+        width: 15px;
+        height: 6px;
+      }
     }
 
     &:hover {
@@ -106,7 +125,6 @@
       opacity: 0.3;
       transition: opacity $trans-default;
     }
-
   }
 
   &--disabled {

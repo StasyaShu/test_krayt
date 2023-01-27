@@ -74,6 +74,7 @@
     position: relative;
     height: 133%;
     transform: scale(1.05);
+    z-index: 5;
     transition: all $trans-default;
 
     .sale-card__parametrs {

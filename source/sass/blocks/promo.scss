@@ -2,10 +2,26 @@
   width: 100%;
   margin: 0 0 120px;
 
+  @include tablet {
+    margin: 0 0 80px;
+  }
+
+  @include mobile {
+    margin: 0 0 40px;
+  }
+
   &__container {
     position: relative;
     background-color: $color-white-smoke2;
     padding: 24px;
+
+    @include tablet {
+      padding: 24px 18px;
+    }
+
+    @include mobile {
+      padding: 12px 7px;
+    }
   }
 
   &__wrapper {
@@ -28,10 +44,6 @@
     }
   }
 
-  &__slide {
-    padding: 0 103px;
-  }
-
   &__controls {
     position: absolute;
     top: 50%;
@@ -39,10 +51,26 @@
 
     &--prev {
       left: 24px;
+
+      @include tablet {
+        left: 18px;
+      }
+
+      @include mobile {
+        left: 8px;
+      }
     }
 
     &--next {
       right: 24px;
+
+      @include tablet {
+        right: 18px;
+      }
+
+      @include mobile {
+        right: 8px;
+      }
     }
   }
 }
@@ -54,6 +82,10 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  @include mobile {
+    bottom: 13px;
+  }
 }
 
 .promo__container .swiper-pagination span:first-child {

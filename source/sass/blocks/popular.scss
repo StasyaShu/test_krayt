@@ -2,6 +2,14 @@
   width: 100%;
   margin: 0 0 120px;
 
+  @include tablet {
+    margin: 0 0 80px;
+  }
+
+  @include mobile {
+    margin: 0 0 40px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -19,5 +27,16 @@
     grid-template-rows: 259px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+    }
   }
 }

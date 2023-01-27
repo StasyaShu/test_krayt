@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-    z-index: -1;
+    z-index: -2;
   }
 
   &__wrapper {
@@ -26,11 +26,25 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @include tablet {
+      padding: 52px 0 25px 0;
+    }
+
     img {
       position: absolute;
       top: 0;
       right: 0;
       object-fit: contain;
+      z-index: -1;
+    }
+  }
+
+  &__wrapper--emerald {
+    img {
+      @include tablet {
+        width: 124px;
+        height: 200px;
+      }
     }
   }
 
@@ -40,6 +54,12 @@
       right: -96px;
       width: 419px;
       height: 285px;
+
+      @include tablet {
+        width: 319px;
+        height: 185px;
+        right: -70px;
+      }
     }
   }
 
@@ -47,6 +67,16 @@
     img {
       top: 43px;
       right: -178px;
+
+      @include tablet {
+        top: 21px;
+        right: -145px;
+      }
+
+      @include mobile {
+        width: 341px;
+        height: 204px;
+      }
     }
   }
 
@@ -63,6 +93,11 @@
       text-transform: uppercase;
 
       @include font-inter-semibold;
+
+      @include tablet {
+        font-size: 16px;
+        line-height: 28px;
+      }
     }
   }
 
@@ -70,7 +105,33 @@
     padding: 0 26px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 194px;
+
+    @include tablet {
+      width: 59%;
+      padding: 0 15px;
+    }
+
+    @media (max-width: 670px) {
+      width: 25%;
+    }
+
+    @media (max-width: 600px) {
+      width: 27%;
+    }
+
+    @media (max-width: 600px) {
+      width: 27%;
+    }
+
+    @media (max-width: 470px) {
+      width: 34%;
+    }
+
+    @media (max-width: 418px) {
+      width: 40%;
+    }
 
     p {
       margin: 0;
@@ -80,6 +141,16 @@
       line-height: 38px;
 
       @include font-inter-semibold;
+
+      @include tablet {
+        font-size: 20px;
+        line-height: 34px;
+      }
+
+      @media (max-width: 418px) {
+        font-size: 18px;
+        line-height: 25px;
+      }
     }
 
     span {
@@ -88,6 +159,16 @@
       line-height: 58px;
 
       @include font-inter-semibold;
+
+      @include tablet {
+        font-size: 28px;
+        line-height: 45px;
+      }
+
+      @media (max-width: 418px) {
+        font-size: 22px;
+        line-height: 38px;
+      }
     }
 
     &--medium {
