@@ -14,7 +14,7 @@
 
   @include mobile {
     padding: 0 0 5px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
     width: 100%;
 
@@ -42,6 +42,7 @@
       flex-direction: column;
       align-items: flex-start;
       width: 100%;
+      padding: 0 0 10px;
     }
   }
 
@@ -62,7 +63,6 @@
 
     @include mobile {
       margin: 0;
-      padding: 15px;
       width: 100%;
     }
   }
@@ -72,7 +72,6 @@
 
     @include mobile {
       margin: 0;
-      padding: 15px;
       width: 100%;
     }
   }
@@ -107,6 +106,7 @@
     @include mobile {
       font-size: 13px;
       color: inherit;
+      padding: 15px;
     }
   }
 

@@ -5,6 +5,11 @@
   color: $color-night-rider;
   margin: 0 0 20px;
 
+  @include mobile {
+    overflow: hidden;
+    margin: 0;
+  }
+
   &__wrapper {
     padding: 24px 0 0 0;
     display: flex;
@@ -41,6 +46,10 @@
     @include mobile {
       width: 100%;
       order: 3;
+      padding: 20px 0 0;
+      height: 0;
+      opacity: 0;
+      transition: opacity $trans-modal, height $trans-modal;
     }
   }
 
@@ -48,7 +57,7 @@
     margin: 0 auto 23px;
 
     @include mobile {
-      margin: 0 0 30px;
+      margin: 0;
     }
   }
 
@@ -143,16 +152,22 @@
 }
 
 .header.is-open {
-
   @include mobile {
     height: 100vh;
     height: calc(100 * var(--vh, 1vh));
+    overflow-y: scroll;
 
     .header__personal {
       top: 100%;
       transform: translateY(0);
       opacity: 1;
       transition: all $trans-modal;
+    }
+
+    .header__contacts {
+      height: 100%;
+      opacity: 1;
+      transition: opacity $trans-modal, height $trans-modal;
     }
 
     .header__links {

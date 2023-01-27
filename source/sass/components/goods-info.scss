@@ -11,6 +11,10 @@
     line-height: 100%;
     color: $color-suva-grey;
     margin: 0 0 2px;
+
+    @include tablet {
+      margin: 0 0 10px;
+    }
   }
 
   &__price {
@@ -19,14 +23,36 @@
     padding: 0 0 31px;
     margin: 0 0 30px;
     border-bottom: 1px solid $color-white-smoke;
+
+    @media (max-width: 1238px) {
+      padding: 0 0 21px;
+      margin: 0 0 20px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__color {
     margin: 0 0 30px;
+
+    @media (max-width: 1238px) {
+      margin: 0 0 20px;
+    }
+
+    @include mobile {
+      margin: 0 0 10px;
+    }
   }
 
   &__measures {
     margin: 0 0 40px;
+
+    @media (max-width: 1238px) {
+      margin: 0 0 10px;
+    }
   }
 
   &__buttons {
@@ -41,10 +67,22 @@
     grid-column: 2 / -1;
     grid-row: 1 / -1;
   }
+
+  &__rate {
+    margin: 0 0 24px;
+
+    @include tablet {
+      margin: 0 0 15px;
+    }
+  }
 }
 
 .goods-info__price .price-discount {
   margin: 0 36px 0 0;
+
+  @include tablet {
+    margin: 0 0 15px 0;
+  }
 }
 
 .goods-info__price .price-discount__price-now {

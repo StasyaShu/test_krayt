@@ -3,6 +3,20 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 
+  @media (max-width: 1328px) {
+    grid-template-columns: 1fr 0.7fr;
+    grid-column-gap: 10px;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__picture {
     display: flex;
     flex-direction: column;
@@ -14,6 +28,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    @include tablet {
+      margin: 0 0 97px;
+    }
   }
 
   &__markers-item:not(:last-child) {
@@ -23,5 +41,16 @@
   &__picture-wrapper {
     display: flex;
     align-items: center;
+
+    @include mobile {
+      align-self: center;
+    }
+
+    img {
+      @include tablet {
+        width: 350px;
+        height: 350px;
+      }
+    }
   }
 }

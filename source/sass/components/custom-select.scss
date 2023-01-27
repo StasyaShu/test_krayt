@@ -44,7 +44,7 @@
 
   &__list {
     position: absolute;
-    z-index: 2;
+    z-index: 6;
     bottom: 0;
     left: -24px;
     width: 197px;
@@ -152,6 +152,7 @@
     .custom-select__list {
       visibility: visible;
       opacity: 1;
+      z-index: 6;
     }
 
     .custom-select__icon {

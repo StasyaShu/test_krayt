@@ -1,18 +1,43 @@
 .slide {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   padding: 0 103px;
 
   @include tablet {
-    grid-template-columns: 0.7fr 1fr;
     padding: 0 70px;
   }
 
   @include mobile {
     padding: 0 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: url("../img/svg/deco-diamond.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+      width: 833px;
+      height: 643px;
+      top: 0;
+      left: -123px;
+      z-index: -1;
+    }
+
+    @include tablet {
+      grid-template-columns: 0.7fr 1fr;
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   picture {

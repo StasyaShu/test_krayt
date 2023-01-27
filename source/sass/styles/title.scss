@@ -17,6 +17,10 @@
 
   &--goods-title {
     font-size: 32px;
+
+    @include tablet {
+      font-size: 26px;
+    }
   }
 }
 

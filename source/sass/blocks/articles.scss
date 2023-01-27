@@ -20,6 +20,10 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 0 40px;
+
+    @include mobile {
+      margin: 0 0 24px;
+    }
   }
 
   &__title {
@@ -58,6 +62,16 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: 18px;
+    grid-row-gap: 18px;
+
+    @media (max-width: 1178px) {
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 

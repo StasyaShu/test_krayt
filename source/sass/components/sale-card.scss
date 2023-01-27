@@ -77,6 +77,9 @@
     z-index: 5;
     transition: all $trans-default;
 
+    @include tablet {
+      transform: none;
+    }
     .sale-card__parametrs {
       display: block;
     }

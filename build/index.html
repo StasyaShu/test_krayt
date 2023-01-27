@@ -108,7 +108,7 @@
               aria-label="Перейти в каталог">Каталог</a>
           </li>
           <li class="header-list__item">
-            <a class="header-list__link" href="#" aria-label="Перейти в раздел акции">Акции</a>
+            <a class="header-list__link" href="#discount" aria-label="Перейти в раздел акции">Акции</a>
           </li>
           <li class="header-list__item">
             <a class="header-list__link" href="#" aria-label="Перейти в раздел бренды">Бренды</a>
@@ -124,7 +124,7 @@
               и оплата</a>
           </li>
           <li class="header-list__item">
-            <a class="header-list__link" href="#" aria-label="Перейти в раздел статьи">Статьи</a>
+            <a class="header-list__link" href="#articles" aria-label="Перейти в раздел статьи">Статьи</a>
           </li>
         </ul>
         <div class="header-list__search-field search">
@@ -152,37 +152,43 @@
         <div class="promo__container swiper">
           <div class="promo__wrapper swiper-wrapper">
             <div class="promo__slide slide swiper-slide">
-              <div class="slide__content">
-                <p class="slide__text">Суперскидка до 60% <span>на бриллианты</span></p>
-                <button class="slide__button button" type="button">Подробнее</button>
+              <div class="slide__wrapper">
+                <div class="slide__content">
+                  <p class="slide__text">Суперскидка до 60% <span>на бриллианты</span></p>
+                  <button class="slide__button button" type="button">Подробнее</button>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="img/img-promo@1x.webp 1x, img/img-promo@2x.webp 2x">
+                  <img src="img/img-promo@1x.png" srcset="img/img-promo@2x.png 2x" width="548" height="548"
+                    alt="Золотое кольцо с бриллиантами">
+                </picture>
               </div>
-              <picture>
-                <source type="image/webp" srcset="img/img-promo@1x.webp 1x, img/img-promo@2x.webp 2x">
-                <img src="img/img-promo@1x.png" srcset="img/img-promo@2x.png 2x" width="548" height="548"
-                  alt="Золотое кольцо с бриллиантами">
-              </picture>
             </div>
             <div class="promo__slide slide swiper-slide">
-              <div class="slide__content">
-                <p class="slide__text">Суперскидка до 60% <span>на сапфиры</span></p>
-                <button class="slide__button button" type="button">Подробнее</button>
+              <div class="slide__wrapper">
+                <div class="slide__content">
+                  <p class="slide__text">Суперскидка до 60% <span>на сапфиры</span></p>
+                  <button class="slide__button button" type="button">Подробнее</button>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="img/img-promo@1x.webp 1x, img/img-promo@2x.webp 2x">
+                  <img src="img/img-promo@1x.png" srcset="img/img-promo@2x.png 2x" width="548" height="548"
+                    alt="Золотое кольцо с бриллиантами">
+                </picture>
               </div>
-              <picture>
-                <source type="image/webp" srcset="img/img-promo@1x.webp 1x, img/img-promo@2x.webp 2x">
-                <img src="img/img-promo@1x.png" srcset="img/img-promo@2x.png 2x" width="548" height="548"
-                  alt="Золотое кольцо с бриллиантами">
-              </picture>
             </div>
             <div class="promo__slide slide swiper-slide">
-              <div class="slide__content">
-                <p class="slide__text">Суперскидка до 60% <span>на золото</span></p>
-                <button class="slide__button button" type="button">Подробнее</button>
+              <div class="slide__wrapper">
+                <div class="slide__content">
+                  <p class="slide__text">Суперскидка до 60% <span>на золото</span></p>
+                  <button class="slide__button button" type="button">Подробнее</button>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="img/img-promo@1x.webp 1x, img/img-promo@2x.webp 2x">
+                  <img src="img/img-promo@1x.png" srcset="img/img-promo@2x.png 2x" width="548" height="548"
+                    alt="Золотое кольцо с бриллиантами">
+                </picture>
               </div>
-              <picture>
-                <source type="image/webp" srcset="img/img-promo@1x.webp 1x, img/img-promo@2x.webp 2x">
-                <img src="img/img-promo@1x.png" srcset="img/img-promo@2x.png 2x" width="548" height="548"
-                  alt="Золотое кольцо с бриллиантами">
-              </picture>
             </div>
           </div>
           <button
@@ -663,7 +669,7 @@
         </div>
       </div>
     </section>
-    <section class="discount">
+    <section class="discount" id="discount">
       <div class="container">
         <h2 class="visually-hidden">Скидочные акции</h2>
         <div class="discount__wrapper">
@@ -773,7 +779,7 @@
             <div class="hit-card__content">
               <form class="goods-info" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data"
                 autocomplete="off">
-                <div class="rate">
+                <div class="goods-info__rate rate">
                   <ul class="rate__stars">
                     <li class="rate__star">
                       <svg width="17" height="16" viewBox="0 0 17 16">
@@ -944,7 +950,7 @@
         </div>
       </div>
     </section>
-    <section class="articles">
+    <section class="articles" id="articles">
       <div class="container">
         <div class="articles__wrapper">
           <div class="articles__header">

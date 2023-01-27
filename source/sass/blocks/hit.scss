@@ -7,7 +7,7 @@
   }
 
   @include mobile {
-    margin: 0 0 40px;
+    margin: 0 0 70px;
   }
 
   &__wrapper {
@@ -20,6 +20,10 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 0 40px;
+
+    @include tablet {
+      margin: 0 0 24px;
+    }
   }
 
   &__title {

@@ -7,11 +7,15 @@
   flex-wrap: wrap;
 
   @include mobile {
-    margin: 0 0 16px;
+    margin: 0 0 10x;
   }
 
   &__item:not(:last-child) {
-    margin: 0 8px 0 0;
+    margin: 0 8px 8px 0;
+  }
+
+  &__item:last-child {
+    margin: 0 0 8px 0;
   }
 
   &__item {

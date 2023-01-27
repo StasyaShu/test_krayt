@@ -27,6 +27,11 @@
     pointer-events: none;
     transition: all $trans-default;
 
+    @include mobile {
+      right: -225px;
+      margin-right: 0;
+    }
+
     p {
       margin: 0;
       padding: 0;
@@ -44,6 +49,11 @@
       right: 50%;
       margin-right: -6px;
       transform: rotate(45deg);
+
+      @include mobile {
+        right: 229px;
+        margin-right: 0;
+      }
     }
   }
 

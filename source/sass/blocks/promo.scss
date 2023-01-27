@@ -25,23 +25,7 @@
   }
 
   &__wrapper {
-    position: relative;
     z-index: -1;
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      background-image: url("../img/svg/deco-diamond.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: cover;
-      width: 833px;
-      height: 643px;
-      top: 0;
-      left: -123px;
-      z-index: -1;
-    }
   }
 
   &__controls {
@@ -111,4 +95,9 @@
 
 .promo__container .swiper-pagination-bullet-active {
   background-color: $color-night-rider;
+}
+
+.promo__container .swiper-button-disabled {
+  opacity: 0.2;
+  pointer-events: none;
 }
