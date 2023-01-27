@@ -25,6 +25,7 @@ const manageMobMenu = () => {
       window.addEventListener('resize', () => {
         if (document.documentElement.clientWidth > 767) {
           menu.classList.remove('is-open');
+          body.style.overflow = 'scroll';
         }
       })
     })
