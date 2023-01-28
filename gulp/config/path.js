@@ -25,6 +25,7 @@ export const path = {
         files: `${srcFolder}/files/**/*.*`,
         favicon: `${srcFolder}/favicon/**/*.*`,
         sprite: `${srcFolder}/img/svg/*.svg`,
+        fonts: `${srcFolder}/fonts/`
     },
     watch: {
         js: `${srcFolder}/js/**/*.js`,
