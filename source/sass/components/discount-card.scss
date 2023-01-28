@@ -113,8 +113,9 @@
       padding: 0 15px;
     }
 
-    @media (max-width: 670px) {
+    @include mobile {
       width: 25%;
+      padding: 0 10px;
     }
 
     @media (max-width: 600px) {
