@@ -60,6 +60,13 @@
     grid-template-rows: auto auto;
     grid-row-gap: 10px;
     grid-column-gap: 39px;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      grid-row-gap: 0;
+      gap: 18px;
+    }
   }
 
   &__accessory {
